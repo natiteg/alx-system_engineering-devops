@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+chmod u+x * && chmod u-x README.md
+vim *
+:argdo set ff=unix | update
+:wq
+git add .
+git commit -m'adding files'
+git push
